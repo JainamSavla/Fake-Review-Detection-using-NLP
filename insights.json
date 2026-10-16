@@ -1,0 +1,415 @@
+{
+ "n_reviews": 40432,
+ "label_counts": {
+  "CG": 20216,
+  "OR": 20216
+ },
+ "rating_by_label": {
+  "1.0": {
+   "CG": 1063,
+   "OR": 1092
+  },
+  "2.0": {
+   "CG": 962,
+   "OR": 1005
+  },
+  "3.0": {
+   "CG": 1952,
+   "OR": 1834
+  },
+  "4.0": {
+   "CG": 3920,
+   "OR": 4045
+  },
+  "5.0": {
+   "CG": 12319,
+   "OR": 12240
+  }
+ },
+ "cg_share_by_category": {
+  "Books_5": 50.0,
+  "Clothing_Shoes_and_Jewelry_5": 50.0,
+  "Electronics_5": 50.0,
+  "Home_and_Kitchen_5": 50.0,
+  "Kindle_Store_5": 50.0,
+  "Movies_and_TV_5": 50.0,
+  "Pet_Supplies_5": 50.0,
+  "Sports_and_Outdoors_5": 50.0,
+  "Tools_and_Home_Improvement_5": 50.0,
+  "Toys_and_Games_5": 50.0
+ },
+ "length_means": {
+  "CG": {
+   "length": 305.6,
+   "word_count": 61.3
+  },
+  "OR": {
+   "length": 397.0,
+   "word_count": 73.6
+  }
+ },
+ "wordcount_hist": {
+  "bins": [
+   0,
+   10,
+   20,
+   30,
+   40,
+   50,
+   60,
+   70,
+   80,
+   90,
+   100,
+   110,
+   120,
+   130,
+   140,
+   150,
+   160,
+   170,
+   180,
+   190
+  ],
+  "CG": [
+   41,
+   5446,
+   3312,
+   2188,
+   1599,
+   1113,
+   925,
+   715,
+   569,
+   503,
+   411,
+   373,
+   324,
+   286,
+   238,
+   239,
+   207,
+   196,
+   173,
+   1358
+  ],
+  "OR": [
+   128,
+   3446,
+   3716,
+   2289,
+   1658,
+   1284,
+   993,
+   775,
+   675,
+   541,
+   475,
+   385,
+   359,
+   313,
+   281,
+   252,
+   208,
+   213,
+   199,
+   2026
+  ]
+ },
+ "cg_specific_words": [
+  "trs",
+  "treme",
+  "tootlemania",
+  "32d",
+  "g17",
+  "60lb",
+  "schlage",
+  "taurus",
+  "makeshift",
+  "peeled",
+  "brio",
+  "dakota",
+  "developed",
+  "140lbs",
+  "tamiya",
+  "directing",
+  "175lbs",
+  "interacted",
+  "brim",
+  "acting"
+ ],
+ "or_specific_words": [
+  "catch",
+  "thats",
+  "extended",
+  "accept",
+  "velcro",
+  "anti",
+  "sd",
+  "closer",
+  "pics",
+  "factor",
+  "ultimately",
+  "regarding",
+  "spread",
+  "sugar",
+  "customers",
+  "trim",
+  "systems",
+  "contained",
+  "lol",
+  "magical"
+ ],
+ "examples": {
+  "CG": [
+   "This outfit is so well made and the quality is just right.  The only reason I ordered this is because I had to get a size down and the waist was too short",
+   "Very powerful for the size, and has the right feel. I will keep this in the tool box",
+   "NOPE! Not my cuppa tea time. The only reason I gave it 4 stars is because I",
+   "Purchased as a birthday gift, it was an interesting and enjoyable read. The author has a way of painting the story."
+  ],
+  "OR": [
+   "works well for an inexpensive toy. We flew through batteries though.",
+   "i bought this for a friend and he loves it.",
+   "Product comes with different attachments.\nI was able to attach this directly to my shop vac hose loosely.",
+   "I love Merrel's.  I just will I could buy more"
+  ]
+ },
+ "models": {
+  "Logistic Regression": {
+   "train_acc": 0.9144,
+   "test_acc": 0.8876,
+   "precision_fake": 0.8934,
+   "recall_fake": 0.8803,
+   "f1_fake": 0.8868,
+   "confusion": [
+    [
+     5428,
+     637
+    ],
+    [
+     726,
+     5339
+    ]
+   ]
+  },
+  "Random Forest": {
+   "train_acc": 0.9999,
+   "test_acc": 0.8587,
+   "precision_fake": 0.8694,
+   "recall_fake": 0.8442,
+   "f1_fake": 0.8566,
+   "confusion": [
+    [
+     5296,
+     769
+    ],
+    [
+     945,
+     5120
+    ]
+   ]
+  },
+  "XGBoost": {
+   "train_acc": 0.9,
+   "test_acc": 0.8504,
+   "precision_fake": 0.876,
+   "recall_fake": 0.8163,
+   "f1_fake": 0.8451,
+   "confusion": [
+    [
+     5364,
+     701
+    ],
+    [
+     1114,
+     4951
+    ]
+   ]
+  },
+  "Decision Tree": {
+   "train_acc": 0.9999,
+   "test_acc": 0.75,
+   "precision_fake": 0.7493,
+   "recall_fake": 0.7514,
+   "f1_fake": 0.7503,
+   "confusion": [
+    [
+     4540,
+     1525
+    ],
+    [
+     1508,
+     4557
+    ]
+   ]
+  }
+ },
+ "lr_cv": {
+  "mean": 0.8837,
+  "std": 0.0041
+ },
+ "lr_top_fake": [
+  [
+   "reason gave",
+   5.064
+  ],
+  [
+   "admit",
+   4.594
+  ],
+  [
+   "also love",
+   4.491
+  ],
+  [
+   "problem realli",
+   4.301
+  ],
+  [
+   "coupl",
+   4.253
+  ],
+  [
+   "downsid",
+   4.217
+  ],
+  [
+   "bought friend",
+   4.213
+  ],
+  [
+   "wide",
+   4.194
+  ],
+  [
+   "reason",
+   4.08
+  ],
+  [
+   "problem",
+   3.773
+  ],
+  [
+   "plastic part",
+   3.641
+  ],
+  [
+   "would recommend",
+   3.63
+  ],
+  [
+   "bit",
+   3.481
+  ],
+  [
+   "materi good",
+   3.43
+  ],
+  [
+   "strong",
+   3.398
+  ],
+  [
+   "well develop",
+   3.394
+  ],
+  [
+   "plastic",
+   3.365
+  ],
+  [
+   "problem kind",
+   3.302
+  ],
+  [
+   "also",
+   3.229
+  ],
+  [
+   "anyon",
+   3.223
+  ]
+ ],
+ "lr_top_genuine": [
+  [
+   "even",
+   -4.967
+  ],
+  [
+   "though",
+   -4.238
+  ],
+  [
+   "without",
+   -3.865
+  ],
+  [
+   "much",
+   -3.484
+  ],
+  [
+   "anoth",
+   -3.347
+  ],
+  [
+   "howev",
+   -3.159
+  ],
+  [
+   "actual",
+   -3.119
+  ],
+  [
+   "seem",
+   -3.095
+  ],
+  [
+   "far",
+   -3.057
+  ],
+  [
+   "everi",
+   -3.049
+  ],
+  [
+   "could",
+   -2.996
+  ],
+  [
+   "everyth",
+   -2.983
+  ],
+  [
+   "other",
+   -2.954
+  ],
+  [
+   "noth",
+   -2.855
+  ],
+  [
+   "sometim",
+   -2.841
+  ],
+  [
+   "alreadi",
+   -2.815
+  ],
+  [
+   "easili",
+   -2.742
+  ],
+  [
+   "otherwis",
+   -2.738
+  ],
+  [
+   "never",
+   -2.727
+  ],
+  [
+   "pick",
+   -2.669
+  ]
+ ]
+}

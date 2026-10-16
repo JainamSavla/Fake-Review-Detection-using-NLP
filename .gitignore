@@ -1,0 +1,37 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Generated model files (optional)
+# Uncomment these if you don't want to push trained models to GitHub
+# model_lr.pkl
+# model_xgb.pkl
+# tfidf_vectorizer.pkl
+
+# Dataset (optional)
+# Uncomment if you don't want to push the dataset to GitHub
+# fake_reviews_dataset.csv

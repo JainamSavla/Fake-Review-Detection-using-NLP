@@ -1,0 +1,7 @@
+streamlit>=1.50
+scikit-learn
+xgboost
+nltk
+pandas
+numpy
+matplotlib
